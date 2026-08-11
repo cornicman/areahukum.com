@@ -18,10 +18,10 @@
             </a>
             <div class="header-right">
                 <div id="dateNow" class="date-box"></div>
-                <form class="search-box" action="#">
+                <form class="search-box" action="#" onsubmit="event.preventDefault(); const target = this.querySelector('select').value; location.hash = target;">
                     <select aria-label="Pilih kategori">
                         <option value="#tentang">Tentang</option>
-                        <option value="#berita">Berita</option>
+                        <option value="#media">Media</option>
                         <option value="#kontak">Kontak</option>
                     </select>
                     <input type="text" placeholder="Cari di sini..." aria-label="Kata kunci" />
@@ -40,6 +40,27 @@
                     <p>Temukan informasi yang dapat membantu Anda</p>
                 </div>
 
+            </div>
+        </section>
+
+        <section id="tentang" class="section">
+            <div class="container">
+                <h2>Tentang</h2>
+                <p>AreaHukum adalah media informasi yang menyajikan konten tentang hukum, panduan, dan analisis yang mudah dipahami.</p>
+            </div>
+        </section>
+
+        <section id="media" class="section alt">
+            <div class="container">
+                <h2>Media</h2>
+                <p>Berita dan artikel terbaru akan ditampilkan di sini. Gunakan kategori di kotak pencarian untuk langsung menuju bagian ini.</p>
+            </div>
+        </section>
+
+        <section id="kontak" class="section">
+            <div class="container">
+                <h2>Kontak</h2>
+                <p>Untuk kerjasama atau pertanyaan: info@areahukum.com</p>
             </div>
         </section>
 
